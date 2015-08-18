@@ -1,0 +1,73 @@
+body {
+    background-color: #1f4151;
+    color: #eee;
+}
+
+h1 {
+    color: #ffcb05;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #ffcb05;
+}
+
+label {
+    display: block;
+}
+
+input {
+    background: #5b8fbf;
+    border-color: #ffcb05;
+}
+
+.reveal_if_active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+input[type="radio"] {
+    float:left;
+    clear: both;
+    margin-right: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+input[type="radio"]:checked ~ .reveal_if_active {
+    opacity: 1;
+    max-height: 100em;
+    transform: scale(1);
+    overflow: visible;
+}
+
+::-webkit-input-placeholder,
+button,
+select {
+    color: #1f4151;
+}
+
+select {
+    width: 12.5em;
+    background-color: #ffcb05;
+}
+
+select option {
+    background-color: #ffcb05;
+}
+
+input[require="true"],
+textarea {
+    background-color: #ffcb05;
+}
+
+.foot_nav {
+    text-align: center;
+    margin: 1em;
+}

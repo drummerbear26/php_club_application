@@ -45,6 +45,47 @@ header h1 {
  }               
 
 /*===================================================================================================
+ Navigation Styles 
+===================================================================================================*/
+nav {
+       	clear:both;
+}
+
+nav ul {
+	    margin 0;
+	    text-align: center;
+	    padding-bottom: 1em;
+	    padding-left: 0;
+}
+
+nav ul li {
+	    display: inline-block;
+	    font-size: 1.5em;
+	    margin: 0 0.25em;
+}
+
+nav ul li a {
+	    text-decoration: none;
+	    background-color: #864c29;
+	    display: inline-block;
+	    color: #f1e6d6;
+	    padding: 0.25em;
+	    -webkit-transition: all 1s;
+	    -moz-transition: all 1s;
+	    -o-transition: all 1s;
+        -ms-transition: all 1s;
+	    transition: all 1s;
+}
+
+nav ul li a:hover {
+	    color: #ffa500;
+}
+
+#active {
+        color: #ffa500;     
+}
+
+/*===================================================================================================
  Show and Toggle Styles 
 ===================================================================================================*/
 div#accordion {

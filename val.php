@@ -106,7 +106,7 @@ if (isset($_POST['submit'])) {
     }
     
     if (empty($_POST["stand"])) {
-        $stand = 'Do you own a stand?';
+        $stand_err = 'Do you own a stand?';
         $errors = 1;
     }
     

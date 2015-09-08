@@ -112,7 +112,7 @@ if (isset($_POST['submit'])) {
 }
 
 if($errors == 0){
-    $successMessage ="Thank you for submitting your application.";
+    $successMessage = "Thank you for submitting your application.";
 }
 
 ?>

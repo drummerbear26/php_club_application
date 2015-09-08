@@ -6,7 +6,7 @@ $firstName_err = $lastName_err = $address_err = $city_err = $state_err = $zip_er
 $firstName = $lastName = $address = $city = $zip = $homePhone = $workPhone = $cellPhone = $email1 = $email2 = $instrument = $ownInstrument = $make = $model = $serialNumber = $stand = $agree = '';
 $state = array();
 $errors = 0;
-$successMessage = 'Thank you for submitting your application';
+$successMessage = '';
 $row_class = "odd";
 
 $states = array (

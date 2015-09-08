@@ -1,3 +1,6 @@
 First Name,Last Name,Address,City,State,Zip,Home Phone,Work Phone,Cell Phone,email 1,Instrument,Own,Make,Model,Serial Number,Stand
-Peri,Winkle,5432 Lavender Ln,Meadowbrook,LA,64705,5551234567,5552345678,5553456789,pwml@home.com,Flute,Yes,Gershwin,Berlin,GB123,Yes
-,,,,,,,,,,,,,,,,
+Hans,Bruegger,24 Bohn Circle,Berlin,GA,12424,5559988776,5558877665,5557766554,hb@bg.com,Tuba,no,,,,yes
+Hans,Bruegger,24 Bohn Circle,Berlin,GA,12424,5559988776,5558877665,5557766554,hb@bg.com,Tuba,no,,,,yes
+Peri,Winkle,123 Lavender Ln,Meadowbrook,AZ,98765,5559988776,5558877665,5557766554,pw@azl.com,Flute,yes,Fluer,Petal,FP001,yes
+Peri,Winkle,123 Lavender Ln,Meadowbrook,AZ,98765,5559988776,5558877665,5557766554,pw@azl.com,Flute,yes,Fluer,Petal,FP001,yes
+Eric,Windblower,54 Gale St W,Gusty,WI,53102,5553456789,5554456789,5555556789,ew@gw.com,Saxophone,yes,Windsor,Howl,WH001,yes

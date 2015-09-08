@@ -1,6 +1,5 @@
 body {
     background-color: #242937;
-    color: #eee;
 }
 
 #wrap {
@@ -13,24 +12,40 @@ h1 {
 }
 
 fieldset {
-    width: 43%;
-    margin: 0 2em;
-    border-radius: 1em;
+    margin: 0 2em 2em;
+    border: none;
+    color: #eee;
+    border-radius: 1em 0 1em 0;
+    background-color: rgba(164, 197, 222, 0.75);
+    -webkit-box-shadow: .5em .5em .5em #33668d;
+    -moz-box-shadow: .5em .5em .5em #33668d;
+    box-shadow: .5em .5em .5em #33668d;
 }
 
-#contact,
-#acknowledgement {
-    float: right;
-    clear: both;
+legend {
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    color: #242937;
 }
 
 .reset,
-.submit {
+input[type="button"] {
     padding: 0.5em;
     border-radius: 1em;
     color: #ffd700;
-    background: #242937;
-    border: 1px solid #a4c5de;
+    background: -webkit-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: -o-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: -ms-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    font-weight: bold;
+}
+
+.reset:hover,
+input[type="button"]:hover {
+    background: -webkit-linear-gradient(top, #242937 0%, #3c404d 48%, #545863 50%, #a4c5de 100%);
+    background: -o-linear-gradient(top, #242937 0%, #3c404d 48%, #545863 50%, #a4c5de 100%);
+    background: -ms-linear-gradient(top, #242937 0%, #3c404d 48%, #545863 50%, #a4c5de 100%);
+    background: linear-gradient(top, #242937 0%, #3c404d 48%, #545863 50%, #a4c5de 100%);
 }
 
 label {
@@ -41,20 +56,13 @@ label {
     overflow: auto;
 }
 
-.left,
-.center,
-.right {
-    float: left;
-    width: 33%;
+input {
+    background: #a4c5de;
+    color: #242937;
 }
 
-input {
-    background: #56b7ff;
-    border-color: #ffd700;
-}
-#reset,
-#submit {
-    
+textarea {
+    color: #242937;
 }
 
 .reveal_if_active {
@@ -84,7 +92,7 @@ input[type="radio"]:checked ~ .reveal_if_active {
 }
 
 ::-webkit-input-placeholder,
-button,
+
 select {
     color: #242937;
 }
@@ -100,26 +108,15 @@ select option {
 
 input[require="true"],
 textarea {
-    background-color: #ffd700;
+    background: -webkit-linear-gradient(top, #fff1aa 0%, #ffed8d 48%, #ffe455 50%, #ffd700 100%);
+    background: -o-linear-gradient(top, #fff1aa 0%, #ffed8d 48%, #ffe455 50%, #ffd700 100%);
+    background: -ms-linear-gradient(top, #fff1aa 0%, #ffed8d 48%, #ffe455 50%, #ffd700 100%);
+    background: linear-gradient(top, #fff1aa 0%, #ffed8d 48%, #ffe455 50%, #ffd700 100%);
 }
 
 .attn,
 .error {
 	color: #ffd700;
-}
-
-.list {
-    margin: 0 2em;
-    text-align: center;
-}
-
-table {
-    margin: 0 auto;
-}
-
-td {
-	border: 1px solid gold;
-	padding: 1em;
 }
 
 .foot_nav {
@@ -161,9 +158,72 @@ textarea:focus {
 }
 
 @-webkit-keyframes mymove {
-    50% {box-shadow: 0px 0px 30px 5px #242937;}
+    50% {box-shadow: 0px 0px 30px 5px #a4c5de;}
 }
 
 @keyframes mymove {
-    50% {box-shadow: 0px 0px 30px 5px #242937;}
+    50% {box-shadow: 0px 0px 30px 5px #a4c5de;}
 }
+
+input[disabled] {
+	padding: 0.5em;
+    border-radius: 1em;
+    color: #c0c0c0;
+    background: -webkit-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: -o-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: -ms-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    font-weight: bold; 
+}
+
+input[disabled]:hover {
+    padding: 0.5em;
+    border-radius: 1em;
+    color: #c0c0c0;
+    background: -webkit-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: -o-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: -ms-linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    background: linear-gradient(top, #a4c5de 0%,#545863 48%,#3c404d 50%,#242937 100%);
+    font-weight: bold;
+}
+
+.success {
+    color: #ffd700;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: #33668d;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.list {
+    margin: 0 2em;
+    text-align: center;
+}
+
+th {
+    background-color: #a4c5de;
+    color: #242937;
+    padding: 0.25em;
+}
+
+td {
+	padding: 1em;
+}
+
+.table_row.odd {
+	background-color: #242937;
+	color: #eee;
+}
+
+.table_row.even {
+	background-color: #ffd700;
+	color: #242937;
+} 
+
